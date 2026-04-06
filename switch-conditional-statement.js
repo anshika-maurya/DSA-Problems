@@ -5,7 +5,7 @@
 // let prompt = require('prompt-sync')()
 // let day = Number(prompt("Enter day number: "))
 
-// switch(day){
+// switch(day){                               //<- input lega like "day"
 //     case 1: {
 //         console.log("Monday")
 //         break;

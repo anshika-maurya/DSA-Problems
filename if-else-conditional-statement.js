@@ -159,7 +159,7 @@
 
 
 // Q 6. Shop discount - Description on graphic
-//practice - 1
+// practice - 1
 
 // formula of discount : (discount * amount/100)
 

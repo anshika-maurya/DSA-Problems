@@ -69,14 +69,11 @@
 // let prompt = require("prompt-sync")();
 // let n = Number(prompt("Enter n: "));
 
-// let output = "";
-// for (let i = 1; i <= n; i++) {
-//   if (n % i === 0) {
-//     output += i + " ";
-//   }
+// for(let i = 1; i<=n/2; i++){
+//     if(n%i===0){
+//         process.stdout.write(i + " ")
+//     }
 // }
-// console.log(output);
-
 
 
 
