@@ -1,6 +1,6 @@
 // let prompt = require('prompt-sync')()
 
-const { Children } = require('react');
+const { Children } = require("react");
 
 // let age = Number(prompt("Enter your age:"))
 
@@ -43,9 +43,6 @@ const { Children } = require('react');
 // }
 // console.log(count);
 
-
-
-
 // let prompt = require('prompt-sync')()
 // let unit = Number(prompt("Enter unit:")) //700
 // let amount = 0
@@ -64,9 +61,4 @@ const { Children } = require('react');
 // amount += (unit*4.2)
 
 // console.log(amount)
-
-
-
-//while-loop
-
 
