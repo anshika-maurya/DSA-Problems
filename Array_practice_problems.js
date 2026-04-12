@@ -88,18 +88,103 @@
 
 //Q 47. All zeros to left and all ones to right.
 
-let arr = [0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0];
+// let arr = [0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0];
 
-let i = 0;
-let j = 0;
+// let i = 0;
+// let j = 0;
 
-while (i < arr.length) {
-  if (arr[i] == 0) {
-    let temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
-    j++;
+// while (i < arr.length) {
+//   if (arr[i] == 0) {
+//     let temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+//     j++;
+//   }
+//   i++;
+// }
+// console.log(arr);
+
+
+
+
+//Q. Array left Rotation by 1.
+
+// let arr = [1,2,3,4,5];
+// let temp = arr[0]
+
+// for(let i=1; i<arr.length; i++){
+//     arr[i-1] = arr[i];
+// }
+// arr[arr.length-1] = temp;
+// console.log(arr)
+
+//Q. Array right Rotation by 1.
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let temp = arr[arr.length-1];
+// for(let i = arr.length-2; i>=0; i--){
+//     arr[i+1] = arr[i]
+// }
+// arr[0] = temp;
+// console.log(arr)
+
+
+
+
+
+
+//Q. Array left Rotation by K elements.
+
+// let k = 12;
+// let count = 0;
+// let arr = [1, 2, 3, 4, 5];
+// k = k % arr.length;              //isse faltu rotation nahi hogi
+// for (let j = 1; j <= k; j++) {
+//   count++;
+//   let temp = arr[0];
+//   for (let i = 1; i < arr.length; i++) {
+//     arr[i - 1] = arr[i];
+//   }
+//   arr[arr.length - 1] = temp;
+// }
+
+// console.log(arr);
+// console.log(count);  //checking kitni baar rotate hora hai
+
+
+
+//Q. Array left Rotation by K elements.
+
+let k = 12;
+let arr = [1, 2, 3, 4, 5];
+k = k % arr.length;             
+for (let j = 1; j <= k; j++) {
+  let temp = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    arr[i - 1] = arr[i];
   }
-  i++;
+  arr[arr.length - 1] = temp;
 }
 console.log(arr);
+ 
+
+
+//Q. Print the count of subarray whose sum is equal to the target
+// (Ex- {1,2,3,7,5} , T=12 )
+// Output - 2 - [ {2,3,7} , {7,5} ]
+// Both subarray have sum 12.
+
+
+// let arr = [1, 2, 3, 7, 5];
+// let count = 0;
+// let target = 12;
+
+// for(let i = 0; i<arr.length; i++){
+//     let sum = 0;
+//     for(let j = i; j<arr.length; j++){
+//         sum += arr[j]
+//         if(sum==target) count++;
+//     }
+// }
+// console.log(count);
