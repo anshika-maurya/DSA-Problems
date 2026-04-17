@@ -15,14 +15,17 @@
 
 //Print natural numbers from N to 1
 
-// let prompt = require("prompt-sync")();
-// let n = Number(prompt("Enter n: "));
+let prompt = require("prompt-sync")();
+let n = Number(prompt("Enter n: "));
 
-// let output = "";
-// for (let i = n; i >= 1; i--) {
-//   output += i + " ";
-// }
-// console.log(output);
+let output = "";
+for (let i = n; i >= 1; i--) {
+  output += i + " ";
+}
+console.log(output);
+
+
+
 
 
 
