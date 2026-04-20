@@ -24,19 +24,43 @@
 
 // Accept a string and print it in reverse order.
 
-let prompt = require("prompt-sync")();
-let s = prompt("Enter string: ");
+// let prompt = require("prompt-sync")();
+// let s = prompt("Enter string: ");
 
-let rev = "";
-for (let i = s.length - 1; i >= 0; i--) {
-  rev += s.charAt(i);
-}
-console.log(rev);
+// let rev = "";
+// for (let i = s.length - 1; i >= 0; i--) {
+//   rev += s.charAt(i);
+// }
+// console.log(rev);
 
 // Q.57 Palindromic string using Two pointer algorithm (hint: Array reverse algo)
 
-let s = "madam";
+//1st way -> actual string and reverse string ko compare karsakte hai, same aaya toh palindromic.
 
-for(let i = 0; i<s.length; i++){
-    
+// let s = "madam";
+
+// let rev = "";
+// for(let i = s.length-1; i>=0; i--){
+//   rev = rev + s[i]
+// }
+// console.log(s==rev ? "Palindromic" : "Not Palindromic")
+
+
+//2nd - two pointer
+
+let s = "malayalam";
+
+let i = 0; 
+let j = s.length-1;
+isPalindromic = true;
+
+while(i<j){
+  if(s.charAt(i)!=s.charAt(j)){
+    isPalindromic = false;
+    break;
+  }
+  i++;
+  j--;
 }
+console.log(isPalindromic ? "Palindrome" : "Not Palindrome");
+
