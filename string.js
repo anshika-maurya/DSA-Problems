@@ -52,3 +52,16 @@
 // Q.57 Palindromic string using Two pointer algorithm (hint: Array reverse algo)
 
 // Q.58 Toggle each alphabet of string In - AcgDFD , Output - aCGdFd
+
+//Q 59. Take an array of strings words and a string prefix. Print the number of strings in words that contain pref as a prefix. Example - Input: words = ["pay", "attention", "practice", "attend"], pref = "at", Output : 2
+
+//Q 60 Capitalize first & last character of each word in the sentence and print the new sentence. Example- Hello bhai Kaise ho a , output-HellO BhaI KaisE HO A
+
+//Q 61 Accept a string and print the frequency of each character present in the string.
+
+//Q 62. Check Two Strings are Anagram or not Anagrams words have the same word length & same character count.
+// Examples of anagram words are arc and car, state and taste, night and things etc.
+
+//Q 63 Maximum number of words found in sentences.
+
+//Q 64 Sort the words of the sentences
