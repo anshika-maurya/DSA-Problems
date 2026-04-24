@@ -115,17 +115,17 @@
 
 //Q 61 Accept a string and print the frequency of each character present in the string.
 
-// let s = "naman";
-// let arr = new Array(128).fill(0);
+let s = "naman";
+let arr = new Array(128).fill(0);
 
-// for(let i = 0; i<s.length; i++){
-//   let ascii = s.charCodeAt(i);
-//   arr[ascii] = arr[ascii] + 1;
-// }
+for(let i = 0; i<s.length; i++){
+  let ascii = s.charCodeAt(i);
+  arr[ascii] = arr[ascii] + 1;
+}
 
-// for(let i = 0; i<arr.length; i++){
-//   if(arr[i]>0) console.log(String.fromCharCode(i) +"->"+ arr[i])
-// }
+for(let i = 0; i<arr.length; i++){
+  if(arr[i]>0) console.log(String.fromCharCode(i) +"->"+ arr[i])
+}
 
 
 
