@@ -68,14 +68,15 @@
 
 // Q.58 Toggle each alphabet of string In - AcgDFD , Output - aCGdFd
 
-// let s = "AcgDFD";
+// let s = "AcgDF12";
 // let ans = "";
 
 // for(let i = 0; i<s.length; i++){
 //   let ascii = s.charCodeAt(i);
 //   if(ascii>=65 && ascii<=90){
 //     ans += String.fromCharCode(ascii+32)
-//   }else ans += String.fromCharCode(ascii-32)
+//   }else if(ascii>=97 && ascii<=122) ans += String.fromCharCode(ascii-32)
+//     else ans += s.charAt(i)
 //   }
 // console.log(ans)
 
@@ -115,17 +116,17 @@
 
 //Q 61 Accept a string and print the frequency of each character present in the string.
 
-let s = "naman";
-let arr = new Array(128).fill(0);
+// let s = "naman";
+// let arr = new Array(128).fill(0);
 
-for(let i = 0; i<s.length; i++){
-  let ascii = s.charCodeAt(i);
-  arr[ascii] = arr[ascii] + 1;
-}
+// for(let i = 0; i<s.length; i++){
+//   let ascii = s.charCodeAt(i);
+//   arr[ascii] = arr[ascii] + 1;
+// }
 
-for(let i = 0; i<arr.length; i++){
-  if(arr[i]>0) console.log(String.fromCharCode(i) +"->"+ arr[i])
-}
+// for(let i = 0; i<arr.length; i++){
+//   if(arr[i]>0) console.log(String.fromCharCode(i) +"->"+ arr[i])
+// }
 
 
 
@@ -149,16 +150,88 @@ for(let i = 0; i<arr.length; i++){
 
 //agar khali lower case hai toh 
 
-// let s = "malayalam";
+
+// Check if two strings are anagrams
+
+// let s = "taste";
+// let s2 = "state";
 // let arr = new Array(26).fill(0);
 
 // for(let i = 0; i<s.length; i++){
 //   let ascii = s.charCodeAt(i);
 //   arr[ascii-97] = arr[ascii-97] + 1;
 // }
-
-// for(let i = 0; i<arr.length; i++){
-//   if(arr[i]>0) console.log(String.fromCharCode(i+97) +"->"+ arr[i])
+// for(let i = 0; i<s2.length; i++){
+//   let ascii = s2.charCodeAt(i);
+//   arr[ascii-97] = arr[ascii-97] - 1; 
 // }
 
+// let isAnagram = true;
+// for(let i = 0; i<arr.length; i++){
+//   if(arr[i]!==0) isAnagram = false;
+// }
+// console.log(isAnagram ? "Yes" : "No");
 
+
+
+
+
+
+
+//Q 63 Maximum number of words found in sentences.
+
+
+
+// let prompt = require('prompt-sync')();
+// let n = Number(prompt("How many sentences there? "));
+// let maxWords = 0;
+// let resultSentence = ""
+
+// for(let i = 0; i<n; i++){
+//     let s = prompt("Enter sentences: ")
+//     s = s.trim();
+    
+
+//     if(s==="") continue;
+
+//     let arr = s.split(/\s+/)
+    
+//     if(maxWords<arr.length){
+//         maxWords = arr.length;
+//         resultSentence = s;
+//     }
+
+// }
+// console.log("Maximum Words: "+maxWords)
+// console.log("Sentence: "+ resultSentence)
+
+
+
+//Q 64 Sort the words of the sentences
+
+//ye 1 direct tarika hai, jise use nahi krna hai , hum bubble sort use karenge.
+
+// let s = "taj mahal is situated at agra";
+
+// let ans = s.split(" ").sort().join(" ");
+
+// console.log(ans)
+
+
+
+// best way using bubble sort.
+
+// let s = "taj mahal is situated at agra";
+// let arr = s.split(" ");
+// let n = arr.length
+
+// for(let i = 0; i<n-1; i++){
+//   for(let j = 0; j<n-1-i; j++){
+//     if(arr[j]>arr[j+1]){
+//       let temp = arr[j];
+//       arr[j] = arr[j+1];
+//       arr[j+1] = temp;
+//     }
+//   }
+// }
+// console.log(arr.join(" "))

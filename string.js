@@ -118,7 +118,7 @@
 // for(let i = 0; i<arr.length; i++){
 //     let word = arr[i];
 //     if(word.length===1){
-//         ans += word.toUpperCase();
+//         ans += word.toUpperCase()+" ";
 //         continue;
 //     }
 
@@ -133,17 +133,52 @@
 
 //Q 61 Accept a string and print the frequency of each character present in the string.
 
-let s = "abAAcbaa";
+// let s = "abAAcbaa";
 
-let arr = new Array(128).fill(0);
+// let arr = new Array(128).fill(0);
 
-console.log(arr)
-
+// for(let i = 0; i<s.length; i++){
+//     let ascii = s.charCodeAt(i);
+//     arr[ascii] = arr[ascii] + 1;
+// }
+// for(let i = 0; i<arr.length; i++){
+//     if(arr[i]>0) console.log(String.fromCharCode(i)+"->"+arr[i])
+// }
 
 
 //Q 62. Check Two Strings are Anagram or not Anagrams words have the same word length & same character count.
 // Examples of anagram words are arc and car, state and taste, night and things etc.
 
+
+
+
+
 //Q 63 Maximum number of words found in sentences.
 
+// let prompt = require('prompt-sync')();
+// let n = Number(prompt("How many sentences there? "));
+// let maxWords = 0;
+// let resultSentence = ""
+
+// for(let i = 0; i<n; i++){
+//     let s = prompt("Enter sentences: ")
+//     s = s.trim();
+    
+
+//     if(s==="") continue;
+
+//     let arr = s.split(/\s+/)
+    
+//     if(maxWords<arr.length){
+//         maxWords = arr.length;
+//         resultSentence = s;
+//     }
+
+// }
+// console.log("Maximum Words: "+maxWords)
+// console.log("Sentence: "+ resultSentence)
+
+
+
 //Q 64 Sort the words of the sentences
+
