@@ -235,3 +235,10 @@
 //   }
 // }
 // console.log(arr.join(" "))
+
+
+
+
+//Assignment Problems:
+
+// 1. Count Asterisks
