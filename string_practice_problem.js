@@ -45,12 +45,11 @@
 // }
 // console.log(s==rev ? "Palindromic" : "Not Palindromic")
 
-
 //2nd - two pointer
 
 // let s = "malayalam";
 
-// let i = 0; 
+// let i = 0;
 // let j = s.length-1;
 // isPalindromic = true;
 
@@ -63,8 +62,6 @@
 //   j--;
 // }
 // console.log(isPalindromic ? "Palindrome" : "Not Palindrome");
-
-
 
 // Q.58 Toggle each alphabet of string In - AcgDFD , Output - aCGdFd
 
@@ -80,7 +77,6 @@
 //   }
 // console.log(ans)
 
-
 //Q 59. Take an array of strings words and a string prefix. Print the number of strings in words that contain pref as a prefix. Example - Input: words = ["pay", "attention", "practice", "attend"], pref = "at", Output : 2
 
 // let words = ["pay", "attention", "practice", "attend"];
@@ -90,8 +86,6 @@
 //   if(words[i].startsWith(pref)) count++;
 // }
 // console.log(count)
-
-
 
 //Q 60 Capitalize first & last character of each word in the sentence and print the new sentence. Example- Hello bhai Kaise ho a , output-HellO BhaI KaisE HO A
 
@@ -112,8 +106,6 @@
 // }
 // console.log(ans)
 
-
-
 //Q 61 Accept a string and print the frequency of each character present in the string.
 
 // let s = "naman";
@@ -128,9 +120,7 @@
 //   if(arr[i]>0) console.log(String.fromCharCode(i) +"->"+ arr[i])
 // }
 
-
-
-//agar khali lower case hai toh 
+//agar khali lower case hai toh
 
 // let s = "malayalam";
 // let arr = new Array(26).fill(0);
@@ -144,12 +134,10 @@
 //   if(arr[i]>0) console.log(String.fromCharCode(i+97) +"->"+ arr[i])
 // }
 
-
 //Q 62. Check Two Strings are Anagram or not Anagrams words have the same word length & same character count.
 // Examples of anagram words are arc and car, state and taste, night and things etc.
 
-//agar khali lower case hai toh 
-
+//agar khali lower case hai toh
 
 // Check if two strings are anagrams
 
@@ -163,7 +151,7 @@
 // }
 // for(let i = 0; i<s2.length; i++){
 //   let ascii = s2.charCodeAt(i);
-//   arr[ascii-97] = arr[ascii-97] - 1; 
+//   arr[ascii-97] = arr[ascii-97] - 1;
 // }
 
 // let isAnagram = true;
@@ -172,15 +160,7 @@
 // }
 // console.log(isAnagram ? "Yes" : "No");
 
-
-
-
-
-
-
 //Q 63 Maximum number of words found in sentences.
-
-
 
 // let prompt = require('prompt-sync')();
 // let n = Number(prompt("How many sentences there? "));
@@ -190,12 +170,11 @@
 // for(let i = 0; i<n; i++){
 //     let s = prompt("Enter sentences: ")
 //     s = s.trim();
-    
 
 //     if(s==="") continue;
 
 //     let arr = s.split(/\s+/)
-    
+
 //     if(maxWords<arr.length){
 //         maxWords = arr.length;
 //         resultSentence = s;
@@ -204,8 +183,6 @@
 // }
 // console.log("Maximum Words: "+maxWords)
 // console.log("Sentence: "+ resultSentence)
-
-
 
 //Q 64 Sort the words of the sentences
 
@@ -216,8 +193,6 @@
 // let ans = s.split(" ").sort().join(" ");
 
 // console.log(ans)
-
-
 
 // best way using bubble sort.
 
@@ -236,9 +211,50 @@
 // }
 // console.log(arr.join(" "))
 
-
-
-
 //Assignment Problems:
 
-// 1. Count Asterisks
+// 1. Count Asterisks - Count the number of * characters in a string. only when they are outside || pairs.
+
+// Count Asterisks
+
+let s = "yo|u*ar|e**|b|e***au|tifu|l";
+
+let count = 0;
+let isInside = false;
+
+for (let i = 0; i < s.length; i++) {
+  if (s.charAt(i) === "|") {
+    isInside = !isInside;
+    continue;
+  } else if (s.charAt(i) === "*" && !isInside) {
+    count++;
+  }
+}
+console.log(count);
+
+
+
+
+// Q 2. You are given a string s and a character letter. Return the percentage of character in s that are equal to letter, rounded down to the nearest integer.
+
+// Percentage of letter in String.
+// let prompt = require("prompt-sync")();
+// let ch = prompt("Enter character: ");
+// let inputCh = ch.toLowerCase();
+// if (ch.length !== 1) {
+//   console.log("Please enter only 1 character");
+// } else {
+//   let s = "Hello";
+//   let str = s.toLowerCase();
+//   let count = 0;
+//   let totalChar = s.length;
+
+//   for (let i = 0; i < s.length; i++) {
+//     if (str.charAt(i) === inputCh) {
+//       count++;
+//     }
+//   }
+//   let percentage = (count / totalChar) * 100;
+//   console.log("count: " + count);
+//   console.log("percentage: " + percentage);
+// }
